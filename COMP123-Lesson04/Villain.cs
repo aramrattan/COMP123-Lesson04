@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace COMP123_Lesson04
 {
-    class Villain : Hero
+    class Villain : Character
     {
         //PRIVATE PROPERTIES****************************
-        private string name;
-        public Villain(string name, int health, int smarts, string gender):base(health, smarts, gender)
+        private bool greed=true;
+        public Villain(string name, int health, int smarts, string gender) : base(name, health, smarts, gender)
         {
-            this.name = name;
+            this.showProfile();
         }
 
         //Public Methods********************************

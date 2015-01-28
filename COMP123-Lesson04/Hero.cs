@@ -6,22 +6,16 @@ using System.Threading.Tasks;
 
 namespace COMP123_Lesson04
 {
-    class Hero
+    //hero based of character
+    class Hero : Character
     {
         //pRIVATE pROPERTIES*********************************************
         bool bravery = true;
-        private int health;
-        private int smarts;
-        private string gender;
-
-
        
         //CONSTRUCTOR
-        public Hero(int health, int smarts, string gender)
+        public Hero(string name, int health, int smarts, string gender) :base(name,health, smarts, gender)
         {
-            this.health = health;
-            this.smarts = smarts;
-            this.gender = gender;
+            this.showProfile();
 
         }
 
