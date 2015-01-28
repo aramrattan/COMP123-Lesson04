@@ -15,7 +15,7 @@ namespace COMP123_Lesson04
             this.name = name;
         }
 
-        //Public Method
+        //Public Methods********************************
         public void doesBadThings()
         {
             Console.WriteLine("Doing bad things... YEAH!");
